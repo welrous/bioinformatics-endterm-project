@@ -1,98 +1,206 @@
-# Bioinformatics End-Term Project
+# 🧬 Bioinformatics End-Term Project
 
-## Project Title
+## Deep Learning for Protein Secondary Structure Prediction
 
-Protein Secondary Structure Prediction
+### 📖 Project Description
 
-## Authors
+This project implements a complete bioinformatics pipeline to predict **protein secondary structure** from amino acid sequences using deep learning.
 
-* Amina Rysbekova
-* Diyar Shakhzadayev
+The notebook contains:
 
-## Project Overview
+* Real biological sequence data processing
+* Encoding of protein sequences
+* Deep learning model training (Keras/TensorFlow)
+* Evaluation using classification metrics
+* Visualization of results
 
-This project applies computational bioinformatics methods to analyze real biological data and answer a biological research question.
+The goal is to computationally predict secondary structure classes (helix, sheet, coil) from primary protein sequence data.
 
-We implement multiple computational approaches including:
+This repository is submitted as the **End-Term Bioinformatics Project (2025–2026)** and includes reproducible code, documentation, and results.
 
-* Data preprocessing
-* Statistical analysis
-* Machine learning models
-* Visualization
+---
 
-## Biological Question
+### 🧪 Biological Question
 
-What genes are differentially expressed in cancer vs normal tissue?
+Can we accurately predict protein secondary structure directly from amino acid sequences using machine learning and deep neural networks?
 
-## Data Sources
+Understanding protein structure helps in:
 
-All data is real biological data from public databases:
+* Drug discovery
+* Functional annotation
+* Molecular biology research
 
-* NCBI GEO
-* Ensembl
-* PDB
-  (Replace with your dataset)
+---
 
-## Repository Structure
+### 📂 Repository Structure
 
-* `notebooks/` → main analysis notebook
-* `src/` → reusable code
-* `data/` → instructions to download data
-* `results/` → figures & outputs
-* `report/` → final PDF report
+```
+project/
+│
+├── notebooks/
+│   └── notebook.ipynb          # main analysis notebook
+│
+├── data/
+│   ├── raw/                    # original dataset
+│   └── processed/              # cleaned data
+│
+├── results/
+│   ├── figures/                # plots & confusion matrix
+│   └── metrics/                # evaluation outputs
+│
+├── README.md
+├── requirements.txt
+└── environment.yml
+```
 
-## How to Run
+---
 
-### 1. Clone repo
+### 📊 Dataset
+
+The project uses **real protein sequence data** (not synthetic), satisfying course requirements.
+
+Data includes:
+
+* Amino acid sequences
+* Secondary structure labels
+
+Sources may include:
+
+* PDB datasets
+* Public bioinformatics repositories
+
+(Exact dataset download instructions are provided in the notebook.)
+
+---
+
+### ⚙️ Methods
+
+#### 1. Data Preprocessing
+
+* Sequence cleaning
+* Encoding amino acids
+* Label encoding
+* Train/test split
+
+Libraries used:
+
+* pandas
+* numpy
+* sklearn
+
+#### 2. Deep Learning Model
+
+A neural network was implemented using **TensorFlow/Keras**:
+
+Model components:
+
+* Embedding layer
+* Conv1D layers
+* Dense layers
+* Softmax output
+
+#### 3. Evaluation
+
+Model performance evaluated using:
+
+* Accuracy
+* Confusion matrix
+* Classification report
+* Visualization plots
+
+---
+
+### 💻 How to Run
+
+#### 1. Clone repository
 
 ```
 git clone https://github.com/yourusername/bioinformatics-project
 cd bioinformatics-project
 ```
 
-### 2. Install environment
+#### 2. Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-or
+#### 3. Run notebook
 
 ```
-conda env create -f environment.yml
-conda activate bioinfo
+jupyter notebook notebooks/notebook.ipynb
 ```
 
-### 3. Run notebook
+Run all cells to reproduce results.
 
-```
-jupyter notebook notebooks/analysis.ipynb
-```
+---
 
-## Methods Used
+### 🧰 Technologies Used
 
-* Differential expression analysis
-* Machine learning classification
-* Visualization (heatmaps, PCA)
+* Python
+* TensorFlow / Keras
+* scikit-learn
+* NumPy
+* Pandas
+* Matplotlib
+* Seaborn
 
-## Results
+---
 
-Main findings:
+### 🔁 Reproducibility
 
-* Identified key biomarkers
-* Compared methods
-* Biological interpretation provided
+This repository includes:
 
-## Reproducibility
+* Complete notebook
+* Environment requirements
+* Clear preprocessing steps
+* Model implementation
+* Evaluation outputs
 
-All steps documented.
-Data accession numbers included.
-Code fully commented.
+All results can be reproduced by running the notebook from start to finish.
 
-## Contributions
+---
 
-See `docs/collaboration.md`
+### 👥 Collaboration
 
-## License
+This project was completed as part of the Bioinformatics course.
 
-MIT
+Contributions include:
+
+* Data preprocessing
+* Model implementation
+* Analysis
+* Documentation
+
+All team members understand and can explain the full pipeline.
+
+---
+
+### 📄 Course Context
+
+Bioinformatics Course
+Academic Year: 2025–2026
+
+Project requirements satisfied:
+
+* Real biological data
+* Computational analysis
+* Multiple methods
+* GitHub reproducibility
+* Biological interpretation
+
+---
+
+### 🚀 Possible Improvements
+
+* Hyperparameter tuning
+* Larger datasets
+* Transformer-based models
+* Cross-validation
+* Structural visualization
+
+---
+
+### 📜 License
+
+MIT License
