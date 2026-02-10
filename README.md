@@ -36,18 +36,8 @@ Understanding protein structure helps in:
 
 ```
 project/
-│
-├── notebooks/
-│   └── notebook.ipynb          # main analysis notebook
-│
-├── data/
-│   ├── raw/                    # original dataset
-│   └── processed/              # cleaned data
-│
-├── results/
-│   ├── figures/                # plots & confusion matrix
-│   └── metrics/                # evaluation outputs
-│
+├── notebook.ipynb     
+├── dataset
 ├── README.md
 ├── requirements.txt
 └── environment.yml
